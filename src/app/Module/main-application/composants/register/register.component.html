@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+  
+  <body>
+    <div class="row" *ngIf="ShowCritere">
+      <div class="col s12 l4 offset-l4">
+        <div class="card  lighten-3 z-depth-2">
+          <div class="card-content">
+            <h4 class="card-title center-align">Connexion</h4>
+            <form>
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">email</i>
+                  <input type="email" id="email" class="validate" />
+                  <label for="email">Email</label>
+                </div>
+                <div class="input-field col s12 ">
+                  <i class="material-icons prefix">vpn_key</i>
+                  <input type="password" id="password" class="validate" />
+                  <label for="email">Password</label>
+                </div>
+                
+              </div>
+
+              <div class="row center-align">
+                <button class="btn waves-effect waves-light btn-seconnecter" type="submit" name="action">Se connecter
+                  <i class="material-icons right">send</i>
+                </button>
+              </div>
+            </form>
+            <h6 class="creer-compte">Envie de nous rejoindre ?
+                <a (click)="addCritere()" class="btn-creer-un-compte">Créer un compte</a></h6>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+     <div id="flayer">
+          <div id="slayer">
+    
+    <div class="container" id="content">
+
+
+      
+        <div class="row boite-register" *ngIf="ShowRegister">
+          <div class="col l3 m3 s12"></div>
+          <div class="col l6 m6 s12">
+            <form action="" method="POST">
+                 <div class="card-panel z-depth-2 boite-register-2 ">
+                  <h5 class="center">S'enregistrer</h5>
+                  <p class="center">Rejoignez la communauté maintenant!</p>
+                   <div class="input-field">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input type="text" name="username">
+                    <label>Nom d'utilisateur</label>
+                  </div>
+                  
+                   <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" name="email" class="validate">
+                    <label>Entrez votre email</label>
+                  </div>
+                  
+                   <div class="input-field">
+                    <i class="material-icons prefix">lock</i>
+                    <input type="password" name="pass1">
+                    <label>Entrez votre mot de passe</label>
+                  </div>
+                  
+                    
+                   <div class="input-field">
+                    <i class="material-icons prefix">vpn_key</i>
+                    <input type="password" name="pass2">
+                    <label>Confirmez votre mot de passe</label>
+                  </div>
+                  <div class="clearfix btn-seconnectere center-align">
+                    <button class="btn waves-effect waves-light btn-seconnecter" type="submit" name="action">Valider l'inscription
+                      <i class="material-icons right">send</i>
+                    </button>
+                  <p class="modal-trigger" >Vous aviez déja un compte? <a (click)="addConnexion()">connexion</a></p>
+                  </div>
+               </div>
+            </form>
+            
+          </div>
+            
+        </div>
+    </div>
+     </div>
+</div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+
+.progress{
+    width:50%;
+    margin:0 auto;
+    margin-top:20%;
+  }
+  
+  @media only screen and (max-width:924px){
+       .progress{
+          width:70%;
+          margin:0 auto;
+          margin-top:60%;
+        }
+  }
+  
+  .boite-register-2{
+      border-radius: 15px;
+      margin-top: 150px;
+  }
+  
+  
+  .btn-seconnectere a{
+      color: #EF2B2D;
+      font-weight: bold;
+  }
+  .btn-creer-un-compte{
+    cursor: pointer;
+  }
+  
+  
+  .btn-creer-un-compte{
+    font-weight: bolder;
+  }
+  
+  
+  .title h3 {
+    margin: 0;
+    padding: 40px 0;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .card {
+    top: 190px;
+    position: relative;
+    z-index: 2;
+  }
+  .creer-compte{
+    text-align: center;
+  }
+  .btn-seconnecter{
+    background-color: #EF2B2D;
+  }
+  .creer-compte a{
+    color: #EF2B2D;
+  }
+  .modal-trigger{
+    font-size: 18px;
+    margin-left: 15px;
+  }
+  .modal-trigger a{
+    cursor: pointer;
+  }
+  

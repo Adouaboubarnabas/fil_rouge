@@ -1,0 +1,84 @@
+<div class="container">
+    <div class="row">
+        <label class="search-boite-label">
+            <input class="with-gap" name="group3" type="radio" checked />
+            <span>Achetez</span>
+        </label>
+        <label class="search-boite-label">
+            <input class="with-gap" name="group3" type="radio" checked />
+            <span>Louer</span>
+        </label>
+        <label class="search-boite-label">
+            <input class="with-gap" name="group3" type="radio" checked />
+            <span>Colocation</span>
+        </label>
+    </div>
+    <div>
+        <div class="row search-boite-form">
+            <select class="browser-default col-s12 col-m4 col-l4 search-boite-select">
+                <option value="" disabled selected>CATEGORIE</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+            <select class="browser-default col-s12 col-m4 col-l4 search-boite-select">
+                <option value="" disabled selected>Type</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+            <select class="browser-default col-s12 col-m4 col-l4 search-boite-select">
+                <option value="" disabled selected>Situé</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+        <div class="row search-boite-form">
+            <select class="browser-default search-boite-select">
+                <option value="" disabled selected>CATEGORIE</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+            <select class="browser-default search-boite-select">
+                <option value="" disabled selected>Type</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+            <select class="browser-default search-boite-select">
+                <option value="" disabled selected>Situé</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+        <div *ngIf="ShowCritere" class="row search-boite-form">
+            <select class="browser-default search-boite-select">
+                <option value="" disabled selected>CATEGORIE</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+            <select class="browser-default search-boite-select">
+                <option value="" disabled selected>Type</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+            <select class="browser-default search-boite-select">
+                <option value="" disabled selected>Situé</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+        <a (click)="addCritere()" class="btn waves-effect boutton-ajouter-critere waves-light" type="submit" name="action">Ajoutez d'autres critères
+            <i class="material-icons right">add_circle_outline</i>
+        </a>
+    </div>
+    <button class="btn waves-effect waves-light " type="submit" name="action">Valider la recherche
+        <i class="material-icons right">send</i>
+    </button>
+</div>

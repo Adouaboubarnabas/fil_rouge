@@ -1,0 +1,14 @@
+
+.map__image{
+    width: 100%;
+    margin-left: auto;
+}
+.map__image path{
+    fill:#00552B;
+    stroke:#fff;
+    stroke-width:1px;
+    transition: fill 0.3s;
+}
+.map__image path:hover{
+    fill:#EF2B2D;
+}
